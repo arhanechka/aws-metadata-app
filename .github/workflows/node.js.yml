@@ -22,7 +22,7 @@ jobs:
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@v0.5.0
         with:
-          s3-bucket: ${{ secrets.hanna-arkhipchuk-webapp-bucket2 }}
+          s3-bucket: ${{ secrets.S3_BUCKET_NAME }}
           local-dir: ./
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
